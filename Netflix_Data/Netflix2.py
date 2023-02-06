@@ -6,7 +6,7 @@ import plotly.express as px
 # Data Reading
 url = "https://raw.githubusercontent.com/mihaibalaur/PYTHON-Personal-Projects/main/Netflix_Data/netflix_titles.csv"
 nf = pd.read_csv(url)
-
+# or
 # nf = pd.read_csv("netflix_titles.csv")
 
 # EDA - Exploratory Data Analysis
