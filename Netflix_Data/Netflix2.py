@@ -4,7 +4,10 @@ import seaborn as sns
 import plotly.express as px
 
 # Data Reading
-nf = pd.read_csv("netflix_titles.csv")
+url = "https://raw.githubusercontent.com/mihaibalaur/PYTHON-Personal-Projects/main/Netflix_Data/netflix_titles.csv"
+nf = pd.read_csv(url)
+
+# nf = pd.read_csv("netflix_titles.csv")
 
 # EDA - Exploratory Data Analysis
 
