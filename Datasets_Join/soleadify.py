@@ -40,9 +40,10 @@ facebook = pd.read_csv("facebook_dataset.csv",
                        encoding='utf-8')
 
 # Convert column 'phone' to numeric
+# errors='coerce' - convert non-numeric values to NaN Values.
 facebook['phone'] = pd.to_numeric(facebook['phone'], errors='coerce')
 
-# Drop rows with non-numeric values in column 'phone'
+# Drop rows with non-numeric values in column 'phone'.
 facebook = facebook.loc[~facebook['phone'].isna()]
 
 # Converting the "phone" column to float32
@@ -51,7 +52,7 @@ facebook["phone"] = facebook["phone"].astype('float32')
 # Option that allows displaying all the columns, using the "head()" function.
 pd.options.display.max_columns = None
 
-# Display the first 5 rows of the DataFrame
+# Display the first 5 rows of the DataFrame.
 print(facebook.head(3))
 print("-" * 100)
 
